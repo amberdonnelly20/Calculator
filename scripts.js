@@ -1,8 +1,7 @@
 // Simple arithmetic calculator app
 
 /**
- * Write some pseudo code steps here.
- * Use those steps as your `commit` messages (and delete them from here as you complete a step.)
+ * Log the value of the select and the inputs
  */
 function add(a, b) {
   return Number(a) + Number(b);
@@ -25,9 +24,13 @@ function remainder(a, b) {
 }
 
 const form = document.querySelector("form");
+const num1 = document.querySelector("num-1");
+const num2 = document.querySelector("num-2");
+const select = document.querySelector("select");
 
 form.addEventListener("submit", function(event) {
+  //Prevent default browser behavior.  DON'T submit
   event.preventDefault();
 
-  console.log("submitted");
+  console.log(num1.value, num2.value, select.value);
 });
