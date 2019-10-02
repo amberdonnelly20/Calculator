@@ -24,8 +24,8 @@ function remainder(a, b) {
 }
 
 const form = document.querySelector("form");
-const num1 = document.querySelector("num-1");
-const num2 = document.querySelector("num-2");
+const num1 = document.querySelector("#num-1");
+const num2 = document.querySelector("#num-2");
 const select = document.querySelector("select");
 
 form.addEventListener("submit", function(event) {
